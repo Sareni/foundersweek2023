@@ -31,7 +31,7 @@ try:
                 print('Success: ' + sensor_name)
             else:
                 print('Fail: ' + sensor_name)
-        if len(sensor_data > 0):
+        if len(sensor_data) > 0:
             tracking.send_many_tracks(sensor_data)
             print('Data sent!')
         else:
