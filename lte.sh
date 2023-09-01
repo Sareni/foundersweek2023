@@ -7,5 +7,5 @@ TOKEN=`grep "TokInfo" ses_tok.xml | cut -b 10-41`
 CONNECT_REQ="<request><dataswitch>1</dataswitch></request>"
 
 curl -X POST -d $CONNECT_REQ "http://$MODEM_IP/api/dialup/mobile-dataswitch" \
--c $COOKIE --header "__RequestVerificationToken: $TOKEN" \
---header "Content-Type: text/xml" --dump-header login_resp_hdr.txt > /dev/null
+--cookie $COOKIE --header "__RequestVerificationToken: $TOKEN" \
+--header "Content-Type: text/xml"
