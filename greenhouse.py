@@ -25,7 +25,7 @@ try:
                 data = {
                     'applicationKey': 'FoundersWeek2023',
                     'type': sensor_name,
-                    'value': '{"humidity":"' + humidity + '", "temperature": "' + temperature + '"}'
+                    'value': '{"humidity":"' + str(humidity) + '", "temperature": "' + str(temperature) + '"}'
                 }
                 sensor_data.append(data)
                 print('Success: ' + sensor_name)
