@@ -25,7 +25,7 @@ try:
 		print("-----------------------------------------------------------------")
 		if Luftfeuchte is not None and Temperatur is not None:
 			# Das gemessene Ergebnis wird in der Konsole ausgegeben
-			print('Temperatur = {0:0.1f}°C    |    rel.Luftfeuchtigkeit={1:0.1f}%'.format(Temperatur,Luftfeuchtigkeit))
+			print('Temperatur = {0:0.1f}°C    |    rel.Luftfeuchtigkeit={1:0.1f}%'.format(Temperatur,Luftfeuchte))
 
 			# Da der Raspberry Pi aufgrund des Linux-Betriebsystems für Echtzeitanwendun-gen benachteiligt ist,
 			# kann es sein, dass aufgrund von Timing Problemen die Kommunikation schei-tern kann.
